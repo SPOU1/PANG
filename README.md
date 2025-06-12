@@ -55,9 +55,9 @@
 ### *Commom Stuff*
 1. Se han actualizado los siguientes valores:
    ```
-   BALL_SPEED 0.05
-   BULLETSPEED 0.5
-   BOUNCE_SPEED 0.05
+   BALL_SPEED    0.05
+   BULLETSPEED   0.5
+   BOUNCE_SPEED  0.05
    ```
 2. Se han añadido los siguientes valores:
    ```
@@ -92,5 +92,5 @@
 10. Se ha añadido en la función `OnDibuja()` para gestionar los elementos a imprimir en función del valor de `gameState`.
 11. Se ha implementado la función `resetGame()`, que resetea las variables al comienzo de cada juego, e elimina los objetos presentes en ese momento, resetea al jugador, y crea las bolas iniciales. También reinicia la música.
 
-### Makefile
+### *Makefile*
 1. Se han añadido los nuevos archivos a la instrucción de compilación en Linux.
