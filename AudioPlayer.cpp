@@ -22,10 +22,10 @@ void AudioPlayer::playMusic (const char *filename) {
     if (musicPid == 0) {
         musicPid = fork();
         if (musicPid == 0) {
-            // Child process for music
+            // Proceso hijo para reproducir música
             setsid();
 
-            // Redirect output to suppress errors
+            // Redirige la salida para suprimir errores
             int devNull = open ("/dev/null", O_WRONLY);
             if (devNull >= 0) {
                 dup2 (devNull, STDOUT_FILENO);
@@ -33,21 +33,21 @@ void AudioPlayer::playMusic (const char *filename) {
                 close (devNull);
             }
 
-            // Use infinite loop for continuous playback
+            // Usa un bucle infinito para la reproducción continua
             while (true) {
-                // Use fork to isolate each playback
+                // Usa fork para aislar cada reproducción
                 pid_t audio_pid = fork();
                 if (audio_pid == 0) {
                     execlp ("aplay", "aplay", "-q", filename, NULL);
                     _exit (0);
                 }
 
-                // Wait for this instance to finish
+                // Espera a que esta instancia termine
                 int status;
                 waitpid (audio_pid, &status, 0);
 
-                // Add small delay before restarting
-                usleep (100000);  // 100ms
+                // Agrega un pequeño retraso antes de reiniciar
+                usleep (10000);  // 10ms
             }
             _exit (0);
         }
@@ -56,7 +56,7 @@ void AudioPlayer::playMusic (const char *filename) {
 
 void AudioPlayer::stopMusic() {
     if (musicPid > 0) {
-        // Kill the entire process group
+        // Termina todo el grupo de procesos
         kill (-musicPid, SIGTERM);
         waitpid (musicPid, NULL, 0);
         musicPid = 0;

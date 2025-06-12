@@ -2,7 +2,6 @@
 
 Shape::Shape() {
     mynumber = RAND_DOM (0, 1000000);
-    // TODO: check mynumber is not repeated
 }
 
 void Shape::getPos (float *p) {
@@ -29,76 +28,35 @@ void Shape::postdraw() {
     glPopMatrix();
 }
 
-// void Shape::move() {
-//     pos[X] += tspeed[X];
-//     pos[Y] += tspeed[Y];
-//     pos[Z] += tspeed[Z];
-//     rot[X] += rspeed[X];
-//     rot[Y] += rspeed[Y];
-//     rot[Z] += rspeed[Z];
-
-//     // updates speed
-//     tspeed[Y] += GRAV * acc_ratio;
-
-//     // check world boundaries
-//     if (pos[X] <= -SIZEX2) {
-//         pos[X] = -SIZEX2;
-//         tspeed[X] = -tspeed[X];
-//     }
-//     if (pos[Y] <= -SIZEY2) {
-//         pos[Y] = -SIZEY2;
-//         tspeed[Y] = 4 * BALL_SPEED * (RAND_FRAC() + 0.2);
-//     }  // -tspeed[Y];}
-//     // if(pos[Z]<=-SIZEZ2) {pos[Z] = SIZEZ2; tspeed[Z] = -tspeed[Z];}
-
-//     if (pos[X] >= SIZEX2) {
-//         pos[X] = SIZEX2;
-//         tspeed[X] = -tspeed[X];
-//     }
-//     if (pos[Y] >= SIZEY2) {
-//         pos[Y] = SIZEY2;
-//         tspeed[Y] = -0.01 * BALL_SPEED;
-//     }
-//     // if(pos[Z]>=SIZEZ2) {pos[Z] = -SIZEX2; tspeed[Z] = -tspeed[Z];}
-
-//     if (rot[X] > 360) rot[X] -= 360;
-//     if (rot[Y] > 360) rot[Y] -= 360;
-//     if (rot[Z] > 360) rot[Z] -= 360;
-
-//     if (rot[X] < 0) rot[X] += 360;
-//     if (rot[Y] < 0) rot[Y] += 360;
-//     if (rot[Z] < 0) rot[Z] += 360;
-// }
-
 void Shape::move() {
-    // Update position
+    // Actualiza la posición
     pos[X] += tspeed[X];
     pos[Y] += tspeed[Y];
     pos[Z] += tspeed[Z];
 
-    // Update rotation
+    // Actualiza la rotación
     rot[X] += rspeed[X];
     rot[Y] += rspeed[Y];
     rot[Z] += rspeed[Z];
 
-    // Apply gravity
+    // Aplica gravedad
     tspeed[Y] += GRAV * acc_ratio;
 
-    // --- Collision with floor (perfect elastic bounce) ---
+    // --- Colisión con el suelo ---
     if (pos[Y] <= -SIZEY2) {
         pos[Y] = -SIZEY2;
 
-        // Bounce up with full speed (no damping)
+        // Rebota hacia arriba con toda la velocidad (sin amortiguación)
         tspeed[Y] = -tspeed[Y];
     }
 
-    // --- Collision with ceiling ---
+    // --- Colisión con el techo ---
     if (pos[Y] >= SIZEY2) {
         pos[Y] = SIZEY2;
         tspeed[Y] = -tspeed[Y];
     }
 
-    // --- Collision with sides ---
+    // --- Colisión con los lados ---
     if (pos[X] <= -SIZEX2) {
         pos[X] = -SIZEX2;
         tspeed[X] = -tspeed[X];
@@ -108,19 +66,7 @@ void Shape::move() {
         tspeed[X] = -tspeed[X];
     }
 
-    // Optional Z axis bounce
-    /*
-    if (pos[Z] <= -SIZEZ2) {
-        pos[Z] = -SIZEZ2;
-        tspeed[Z] = -tspeed[Z];
-    }
-    if (pos[Z] >= SIZEZ2) {
-        pos[Z] = SIZEZ2;
-        tspeed[Z] = -tspeed[Z];
-    }
-    */
-
-    // Clamp rotations to [0, 360]
+    // Limita las rotaciones a [0, 360]
     for (int i = 0; i < 3; i++) {
         if (rot[i] >= 360.0f) rot[i] -= 360.0f;
         if (rot[i] < 0.0f) rot[i] += 360.0f;

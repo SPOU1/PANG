@@ -95,18 +95,18 @@ Ball *Ball::split() {
     Ball *tmp = new Ball (1, size - 1, pos[X], pos[Y]);
     size--;
 
-    // Custom speed settings after construction
-    float splitSpeedX = 0.05f;  // Speed to left/right
-    float splitSpeedY = 0.01f;  // Optional upward bounce
+    // Actualiza la velocidad de la bola original y la nueva bola
+    float splitSpeedX = 0.05f;  // Velocidad hacia la izquierda/derecha
+    float splitSpeedY = 0.01f;  // Rebote opcional hacia arriba
 
-    // Update original ball's color
+    // Actualiza el color de la bola original
     updateColor();
 
-    // Original ball goes left
+    // La bola original va a la izquierda
     tspeed[X] = -splitSpeedX;
     tspeed[Y] = splitSpeedY;
 
-    // New ball goes right
+    // La nueva bola va a la derecha
     tmp->tspeed[X] = splitSpeedX;
     tmp->tspeed[Y] = splitSpeedY;
 

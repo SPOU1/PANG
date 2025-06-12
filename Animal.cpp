@@ -40,8 +40,8 @@ void Animal::draw() {
     glPushMatrix();
     glColor3f (0.2f, 0.2f, 0.2f);         // Color del pico
     glTranslatef (0.0f, -0.8f, 0.0f);     // Posición del pico
-    glRotatef (90.0f, 0.0f, 1.0f, 0.0f);  // Rotación para que quede en la posición correcta
-    glRotatef (90.0f, 1.0f, 0.0f, 0.0f);  // Rotación para que quede en la posición correcta
+    glRotatef (90.0f, 0.0f, 1.0f, 0.0f);  // Rotación
+    glRotatef (90.0f, 1.0f, 0.0f, 0.0f);  // Rotación
     glutSolidCone (0.12f, 0.3f, 10, 10);  // Pico del animal
     glPopMatrix();
 
@@ -49,16 +49,16 @@ void Animal::draw() {
     glPushMatrix();
     glColor3f (0.8f, 0.8f, 0.0f);          // Color de las alas
     glTranslatef (0.1f, -0.1f, 0.0f);      // Posición de las alas
-    glRotatef (90.0f, 0.0f, 1.0f, 0.0f);   // Rotación para que queden en la posición correcta
-    glRotatef (-30.0f, 1.0f, 0.0f, 0.0f);  // Rotación para que queden en la posición correcta
+    glRotatef (90.0f, 0.0f, 1.0f, 0.0f);   // Rotación
+    glRotatef (-30.0f, 1.0f, 0.0f, 0.0f);  // Rotación
     glutSolidCone (0.35f, 1.0f, 10, 10);   // Ala derecha
     glPopMatrix();
 
     glPushMatrix();
     glColor3f (0.8f, 0.8f, 0.0f);          // Color de las alas
     glTranslatef (-0.1f, -0.1f, 0.0f);     // Posición de las alas
-    glRotatef (-90.0f, 0.0f, 1.0f, 0.0f);  // Rotación para que queden en la posición correcta
-    glRotatef (-30.0f, 1.0f, 0.0f, 0.0f);  // Rotación para que queden en la posición correcta
+    glRotatef (-90.0f, 0.0f, 1.0f, 0.0f);  // Rotación
+    glRotatef (-30.0f, 1.0f, 0.0f, 0.0f);  // Rotación
     glutSolidCone (0.35f, 1.0f, 10, 10);   // Ala izquierda
     glPopMatrix();
 
@@ -66,8 +66,8 @@ void Animal::draw() {
     glPushMatrix();
     glColor3f (0.6f, 0.6f, 0.0f);         // Color de la cola
     glTranslatef (0.0f, 1.0f, 0.0f);      // Posición de la cola
-    glRotatef (90.0f, 0.0f, 1.0f, 0.0f);  // Rotación para que quede en la posición correcta
-    glRotatef (90.0f, 1.0f, 0.0f, 0.0f);  // Rotación para que quede en la posición correcta
+    glRotatef (90.0f, 0.0f, 1.0f, 0.0f);  // Rotación
+    glRotatef (90.0f, 1.0f, 0.0f, 0.0f);  // Rotación
     glutSolidCone (0.25f, 0.5f, 10, 10);  // Cola del animal
     glPopMatrix();
 

@@ -6,13 +6,13 @@
 #ifndef __AUDIOPLAYER_H__
     #define __AUDIOPLAYER_H__
 class AudioPlayer {
+   private:
+    static pid_t musicPid;
+
    public:
     static void playSound (const char *filename);
     static void playMusic (const char *filename);
     static void stopMusic();
-
-   private:
-    static pid_t musicPid;
 };
 
 #endif

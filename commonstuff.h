@@ -35,7 +35,7 @@
 #define BALL_SPEED   0.05
 #define BULLETSPEED  0.5
 #define NUMBALLS     5
-#define MAXSHOTTIME  80
+#define MAXSHOTTIME  100
 #define GRAV         -9.8
 #define BOUNCE_SPEED 0.02
 

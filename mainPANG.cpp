@@ -166,11 +166,11 @@ void printdata() {
 }
 
 void drawBox (float x, float y, float width, float height, float r, float g, float b, float alpha) {
-    glPushAttrib (GL_ENABLE_BIT | GL_DEPTH_BUFFER_BIT);  // Save current state
+    glPushAttrib (GL_ENABLE_BIT | GL_DEPTH_BUFFER_BIT);  // Guarda el estado actual de OpenGL
     glDisable (GL_LIGHTING);
-    glDisable (GL_DEPTH_TEST);  // Disable depth test for 2D elements
+    glDisable (GL_DEPTH_TEST);  // Desactiva la prueba de profundidad para elementos 2D
 
-    // Switch to orthographic projection
+    // Cambia a proyección ortográfica
     glMatrixMode (GL_PROJECTION);
     glPushMatrix();
     glLoadIdentity();
@@ -179,11 +179,11 @@ void drawBox (float x, float y, float width, float height, float r, float g, flo
     glPushMatrix();
     glLoadIdentity();
 
-    // Enable blending for transparency
+    // Activa el blending para la transparencia
     glEnable (GL_BLEND);
     glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    // Draw the box
+    // Dibuja el rectángulo con el color y la transparencia especificados
     glColor4f (r, g, b, alpha);
     glBegin (GL_QUADS);
     glVertex2f (x, y);
@@ -194,23 +194,22 @@ void drawBox (float x, float y, float width, float height, float r, float g, flo
 
     glDisable (GL_BLEND);
 
-    // Restore previous matrices
+    // Restaura las matrices de proyección y modelo
     glPopMatrix();
     glMatrixMode (GL_PROJECTION);
     glPopMatrix();
     glMatrixMode (GL_MODELVIEW);
 
-    // Restore state
+    // Restaura el estado
     glPopAttrib();
 }
 
-// Updated text printing function with depth handling
 void printText (const char *text, float x, float y, float r, float g, float b) {
-    glPushAttrib (GL_ENABLE_BIT | GL_DEPTH_BUFFER_BIT);  // Save current state
+    glPushAttrib (GL_ENABLE_BIT | GL_DEPTH_BUFFER_BIT);  // Guarda el estado actual
     glDisable (GL_LIGHTING);
-    glDisable (GL_DEPTH_TEST);  // Disable depth test for 2D elements
+    glDisable (GL_DEPTH_TEST);  // Desactiva la prueba de profundidad para elementos 2D
 
-    // Switch to orthographic projection
+    // Cambia a proyección ortográfica
     glMatrixMode (GL_PROJECTION);
     glPushMatrix();
     glLoadIdentity();
@@ -219,30 +218,30 @@ void printText (const char *text, float x, float y, float r, float g, float b) {
     glPushMatrix();
     glLoadIdentity();
 
-    // Set text color and position
+    // Establece el color y la posición del texto
     glColor3f (r, g, b);
     glRasterPos2f (x, y);
 
-    // Draw text
+    // Dibuja el texto
     for (int i = 0; text[i] != '\0'; i++) {
         glutBitmapCharacter (GLUT_BITMAP_HELVETICA_18, text[i]);
     }
 
-    // Restore previous matrices
+    // Restaura las matrices anteriores
     glPopMatrix();
     glMatrixMode (GL_PROJECTION);
     glPopMatrix();
     glMatrixMode (GL_MODELVIEW);
 
-    // Restore state
+    // Restaura el estado
     glPopAttrib();
 }
 
 void printMenu() {
-    // Draw semi-transparent background box first
+    // Dibuja el fondo semi-transparente
     drawBox (WINX / 2 - 200, WINY / 2 - 100, 400, 200, 0.1f, 0.1f, 0.3f, 0.7f);
 
-    // Then draw text on top of the box
+    // Luego dibuja el texto sobre el cuadro
     printText ("PANG 2025", WINX / 2 - 40, WINY / 2 + 60, 1.0f, 1.0f, 0.0f);
     printText ("Press SPACE to start", WINX / 2 - 80, WINY / 2 + 10, 0.0f, 1.0f, 0.0f);
     printText ("CONTROLS:", WINX / 2 - 50, WINY / 2 - 30, 1.0f, 1.0f, 1.0f);
@@ -251,10 +250,10 @@ void printMenu() {
 }
 
 void printGameOver() {
-    // Draw semi-transparent background box first
+    // Dibuja el fondo semi-transparente
     drawBox (WINX / 2 - 200, WINY / 2 - 70, 400, 160, 0.3f, 0.1f, 0.1f, 0.7f);
 
-    // Then draw text on top of the box
+    // Luego dibuja el texto sobre el cuadro
     printText ("GAME OVER", WINX / 2 - 60, WINY / 2 + 60, 1.0f, 0.2f, 0.2f);
 
     char scoreText[50];
@@ -268,31 +267,32 @@ void printGameOver() {
     printText ("Press SPACE to restart", WINX / 2 - 100, WINY / 2 - 60, 0.0f, 1.0f, 0.0f);
 }
 
-// Get high score from a file
+// Obtiene la puntuación más alta de un archivo
 int getHighScore() {
     FILE *file = fopen ("scores.txt", "r");
-    int highScore = 0;  // Variable to store the high score
+    int highScore = 0;  // Variable para almacenar la puntuación más alta
     if (file) {
         int score;
         char date_str[100];
         char time_str[100];
         while (fscanf (file, "%99s %99s - Score: %d\n", date_str, time_str, &score) == 3) {
             if (score > highScore) {
-                highScore = score;  // Update high score if current score is higher
+                highScore =
+                    score;  // Actualiza la puntuación más alta si la puntuación actual es mayor
             }
         }
         fclose (file);
     } else {
-        printf ("Error opening scores.txt for reading\n");
+        printf ("Error al abrir scores.txt para lectura\n");
     }
     return highScore;
 }
 
-// Save scores
+// Guarda la puntuación actual en un archivo
 void saveScore() {
     FILE *file = fopen ("scores.txt", "a");
     if (!file) {
-        printf ("Error opening scores.txt for writing\n");
+        printf ("Error al abrir scores.txt para escritura\n");
         return;
     }
     time_t now = time (NULL);
@@ -300,7 +300,7 @@ void saveScore() {
 
     char time_str[100];
     strftime (time_str, sizeof (time_str), "%Y-%m-%d %H:%M:%S", t);
-
+    // Escribe la fecha y hora junto con la puntuación en el archivo
     fprintf (file, "%s - Score: %d\n", time_str, score);
     fclose (file);
 }
