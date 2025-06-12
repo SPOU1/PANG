@@ -55,8 +55,8 @@
 ### *Commom Stuff*
 1. Se han actualizado los siguientes valores:
    ```
-   BALL_SPEED 0.05
-   BULLETSPEED 0.5
+   BALL_SPEED   0.05
+   BULLETSPEED  0.5
    BOUNCE_SPEED 0.05
    ```
 2. Se han añadido los siguientes valores:
