@@ -92,5 +92,5 @@
 10. Se ha añadido en la función `OnDibuja()` para gestionar los elementos a imprimir en función del valor de `gameState`.
 11. Se ha implementado la función `resetGame()`, que resetea las variables al comienzo de cada juego, e elimina los objetos presentes en ese momento, resetea al jugador, y crea las bolas iniciales. También reinicia la música.
 
-### Makefile
+### *Makefile*
 1. Se han añadido los nuevos archivos a la instrucción de compilación en Linux.
