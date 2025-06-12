@@ -93,4 +93,5 @@
 11. Se ha implementado la función `resetGame()`, que resetea las variables al comienzo de cada juego, e elimina los objetos presentes en ese momento, resetea al jugador, y crea las bolas iniciales. También reinicia la música.
 
 ### *Makefile*
+### *Makefile*
 1. Se han añadido los nuevos archivos a la instrucción de compilación en Linux.
