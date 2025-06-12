@@ -42,9 +42,9 @@
 1. Se ha implementado la clase `AudioPlayer`, que gestiona la reproducción de música y efectos de sonido.
 2. Se ha implementado el atributo `musicPID`, que se inicializa a `0`.
 3. Se han implementado los siguientes métodos:
-     * `playSound`: Se crea un proceso hijo que reporduce el efecto de sonido hasta que termine. 
-     * `playMusic`: Se crea un proceso hijo que reproduce la música de fondo en bucle. 
-     * `stopMusic`: Detiene el proceso que reporduce la música de fondo del juego.
+     * `playSound()`: Se crea un proceso hijo que reporduce el efecto de sonido hasta que termine. 
+     * `playMusic()`: Se crea un proceso hijo que reproduce la música de fondo en bucle. 
+     * `stopMusic()`: Detiene el proceso que reporduce la música de fondo del juego.
 
 ### *Man*
 1. Se ha añadido el efecto de sonido al disparo (método `fire()`).
