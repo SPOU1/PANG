@@ -5,7 +5,8 @@
 2. Se ha añadido el método `updateColor()` que actualiza el color de las bolas en función de su tamaño.
 3. Se ha editado el método `split()`. Se edita la velocidad tras la colisión, para que no caigan encima del jugador. También se actualiza el color de la pelota original, pues antes no cambiaba.
 4. Se ha implementado el operador `+` que devuelve la distancia entre el objeto `Ball` y el otro objeto de clase `Shape`.
- 
+5. Se han añadido los métodos `getSpeed()`, `setSpeed()` y `setPos()` para gestionar rebotes con los obstáculos. Como estos métodos solo se emplean en los objetos de tipo `Ball`, no se han implementado en el la superclase `Shape`. 
+
 ### *Bullet*
 1. Se ha cambiado el color de la bala a azul, para mejor contraste con las bolas y animales.
 
@@ -28,7 +29,19 @@
      * `reposition()`: Cuando se resetea la posición del jugador, todas las bolas colindantes se reposicionan para no colisionar con el jugador.
      * `collisions()`: Gestiona las distintas colisiones en el juego. Devuelve un valor en funcíon del tipo de colisión.
      * `removeAllExceptMan()`: Elimina todos los objetos excepto el jugador. Se emplea para resetear el juego.
+     * `createObstacles()`: Crea 4 obstáculos al comienzo de cada juego.
      * `createBalls()`: Crea las bolas al comienzo de cada juego. Al principio estaba dentro del constructor de la lista, sin embargo, se debe crear nuevas bolas cada vez que se resetea el juego.
+
+### *Obstacle*
+1. Se ha implementado la clase `Obtacle`.
+2. Se ha implementado el atributo `size[2]`, que guarda el ancho y alto del obstáculo.
+4. Se han implementado los siguientes métodos:
+     * `Obstalce()`: Constructor. Se genera en la posición especificada y almacena el tamaño especificado en el atributo `size`.
+     * `draw()`: Se dibuja un rectángulo en la possición y del tamñano almacenado.
+     * `getSize()`: Devuele el área del rectángulo (no se usa en esta subclase).
+     * `getDistanceToEdge()`: Devuelve la distancia al borde del obstáculo en la dirección especificada en el argumento. Se emplea para calcular colisiones.
+     * `operator+()`: Igual que con la bola. Devuelve la distancia entre el obstáculo y otro objeto.
+
 
 ### *Animal*
 1. Se ha implementado la clase `Animal`.
@@ -86,11 +99,13 @@
     * Se ha completado la gestión de colisiones:
       * Colisión Bola-Jugador: si `nMan == 0`, se guarda el score, acualiza `highScore` si es necesario y se actualiza `gameState`. Si no, se resetea la posición del jugador, y de las bolas colindantes.
       * Colisión Bola-Proyectil: se elimina el proyectil, y se actualiza `score`, en función del tamaño de la bola.
-      * Colisión Animal-Proyectil: se eliminan el proyectil y el jugador, y se suman 1000 puntos a `score`.
+      * Colisión Animal-Proyectil: se eliminan el proyectil y el animal, y se suman 1000 puntos a `score`.
+      * Colisión Obstáculo-Proyectil: se elimina el poryectil.
+      * Colisión Obstáculo-Bola: no es necesario hacer nada, ya que se gestiona dentro del método `worldobjects.collisions()`
     * Se han añadido los efectos de sonido a cada colisión. Si se `nMan == 0`, también se detiene la música.
   
 10. Se ha añadido en la función `OnDibuja()` para gestionar los elementos a imprimir en función del valor de `gameState`.
-11. Se ha implementado la función `resetGame()`, que resetea las variables al comienzo de cada juego, e elimina los objetos presentes en ese momento, resetea al jugador, y crea las bolas iniciales. También reinicia la música.
+11. Se ha implementado la función `resetGame()`, que resetea las variables al comienzo de cada juego, e elimina los objetos presentes en ese momento, resetea al jugador, y crea los ostáculos y bolas iniciales. También reinicia la música.
 
 ### *Makefile*
 1. Se han añadido los nuevos archivos a la instrucción de compilación en Linux.
