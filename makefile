@@ -19,8 +19,8 @@ osX:	Shape.o  Ball.o Bullet.o mainPANG.o commonstuff.h Man.o ObjectsList.o GLstu
 	g++ Shape.o GLstuff.o Bullet.o Man.o Ball.o  mainPANG.o ObjectsList.o  $(OSX_LDFLAGS)  -o PANG  -Wno-deprecated-declarations
 
 
-Linux:	Shape.o  Ball.o Bullet.o mainPANG.o commonstuff.h Man.o ObjectsList.o GLstuff.o Animal.o AudioPlayer.o
-	g++ Shape.o  Bullet.o Man.o GLstuff.o Ball.o mainPANG.o ObjectsList.o Animal.o AudioPlayer.o -Wl,--copy-dt-needed-entries $(Linux_LDFLAGS)  $(LinuxLFLAGS)  -o PANG  -Wno-deprecated-declarations
+Linux:	Shape.o  Ball.o Bullet.o mainPANG.o commonstuff.h Man.o ObjectsList.o GLstuff.o Animal.o AudioPlayer.o Obstacle.o
+	g++ Shape.o  Bullet.o Man.o GLstuff.o Ball.o mainPANG.o ObjectsList.o Animal.o AudioPlayer.o Obstacle.o -Wl,--copy-dt-needed-entries $(Linux_LDFLAGS)  $(LinuxLFLAGS)  -o PANG  -Wno-deprecated-declarations
 
 clean:
 	rm -f *~

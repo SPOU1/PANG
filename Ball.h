@@ -19,6 +19,9 @@ class Ball: public Shape {
     float getSize();
     void reposition();
     void updateColor();
+    float *getSpeed();
+    void setSpeed (float speed[3]);
+    void setPos (float pos[3]);
     float operator+ (Shape *);
 };
 

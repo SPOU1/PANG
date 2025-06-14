@@ -29,5 +29,6 @@ class ObjectsList {
     void reposition (Man *TheMan);
     float collisions (Bullet *TheBullet, Man *TheMan, Animal *TheAnimal);
     void removeAllExceptMan (Man *TheMan);
+    void createObstacles();
     void createBalls();
 };

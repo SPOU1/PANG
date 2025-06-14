@@ -345,6 +345,7 @@ void myLogic() {
     // colisión res==0:  No ha colisicón res==1:  Bola/jugador res>=2:  Bola/Proyectil, depende del
     // tipo de bola (grande/mediano/pequeño)
     res = worldobjects.collisions (theBullet, theMan, theAnimal);
+    // if (res) printf ("Collision result: %d\n", res);
 
     if (res == 1) {  // Bola/jugador
         if (nMan > 0) {
@@ -369,8 +370,7 @@ void myLogic() {
         }
     }
 
-    if (res == 2 || res == 3 || res == 4) {  //   Bola/Proyectil
-
+    if (res == 2 || res == 3 || res == 4) {               // Bola/Proyectil
         worldobjects.remove (theBullet);                  // borra el proyectil
         AudioPlayer::playSound ("sounds/explosion.wav");  // Reproduce el sonido de explosión
         theBullet = NULL;                                 // esto quizás sobra pero por si acaso...
@@ -387,6 +387,16 @@ void myLogic() {
         worldobjects.remove (theAnimal);               // borra el animal
         theAnimal = NULL;                              // resetea el puntero al animal
     }
+
+    if (res == 6) {                       // Obstáculo/ Proyectil
+        worldobjects.remove (theBullet);  // borra el proyectil
+        theBullet = NULL;                 // esto quizás sobra pero por si acaso...
+        shotTime = 0;                     // resetea el tiempo de vida del proyectil
+    }
+
+    // No es necesario hacer nada
+    // if (res == 7) {  // Obstáculo/ Bola
+    // }
 
     if (specialKeysHeld[GLUT_KEY_LEFT]) { theMan->strafe (-0.15, 0, 0); }
     if (specialKeysHeld[GLUT_KEY_RIGHT]) { theMan->strafe (0.15, 0, 0); }
@@ -439,6 +449,9 @@ void resetGame() {
 
     // Crea las bolas iniciales
     worldobjects.createBalls();
+
+    // Crea los obstáculos iniciales
+    worldobjects.createObstacles();
 
     // Reproduce la música de fondo
     AudioPlayer::playMusic ("sounds/music.wav");

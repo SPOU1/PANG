@@ -142,6 +142,26 @@ void Ball::updateColor() {
     }
 }
 
+float *Ball::getSpeed() {
+    static float speed[3];
+    speed[X] = tspeed[X];
+    speed[Y] = tspeed[Y];
+    speed[Z] = tspeed[Z];
+    return speed;
+}
+
+void Ball::setSpeed (float speed[3]) {
+    tspeed[X] = speed[X];
+    tspeed[Y] = speed[Y];
+    tspeed[Z] = speed[Z];
+}
+
+void Ball::setPos (float pos[3]) {
+    this->pos[X] = pos[X];
+    this->pos[Y] = pos[Y];
+    this->pos[Z] = pos[Z];
+}
+
 float Ball::operator+ (Shape *other) {
     float otherPos[3];
     other->getPos (otherPos);
