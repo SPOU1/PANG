@@ -82,7 +82,7 @@
 9. Cambios en la función `myLogic()`:
     * Solo se ejecuta si el estado es `GAME_STATE` (si no está en el menú de inicio o de de Game Over).
     * Se ha modificado la gestión de la bala. Ahora, la bala se destruye cuando sale de la pantalla, en lugar de depender de si el tiempo `shotTime` es mayor a `MAXSHOTTIME`.
-    * Se ha añadido la generación de aninmales. Se genera con un 1% de probabilidad en la parte superior de la pantalla, y se elimina cuando llega a la parte inferior.
+    * Se ha añadido la generación de animales. Se genera con un 1% de probabilidad en la parte superior de la pantalla, y se elimina cuando llega a la parte inferior.
     * Se ha completado la gestión de colisiones:
       * Colisión Bola-Jugador: si `nMan == 0`, se guarda el score, acualiza `highScore` si es necesario y se actualiza `gameState`. Si no, se resetea la posición del jugador, y de las bolas colindantes.
       * Colisión Bola-Proyectil: se elimina el proyectil, y se actualiza `score`, en función del tamaño de la bola.
@@ -92,6 +92,5 @@
 10. Se ha añadido en la función `OnDibuja()` para gestionar los elementos a imprimir en función del valor de `gameState`.
 11. Se ha implementado la función `resetGame()`, que resetea las variables al comienzo de cada juego, e elimina los objetos presentes en ese momento, resetea al jugador, y crea las bolas iniciales. También reinicia la música.
 
-### *Makefile*
 ### *Makefile*
 1. Se han añadido los nuevos archivos a la instrucción de compilación en Linux.
