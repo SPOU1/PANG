@@ -11,7 +11,6 @@ struct nodo {
 };
 
 typedef struct nodo nodo;
-typedef nodo *pnodo;
 
 class ObjectsList {
    private:
