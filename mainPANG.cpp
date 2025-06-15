@@ -1,8 +1,10 @@
-//***********************
-// Asteroids Open GL
-// Claudio Rossi, Universidad Politécnica de Madrid
-// (C) 2015
-//***********************
+//****************************************************//
+// Segundo trabajo de Programación de Sistemas. PANG. //
+// Iñaki García Valero, 22136                         //
+// Steffen Pablo Otten, 22252                         //
+// Javier Melero Moreno, 20216                        //
+// Curso 2024-2025                                    //
+//****************************************************//
 
 #include <stdio.h>
 #include <math.h>

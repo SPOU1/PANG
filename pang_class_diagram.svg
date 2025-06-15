@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Bouml (http://bouml.free.fr/) -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="644" height="672" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="348" y="346" width="2" height="82" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="272" y="426" width="78" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="269" y="343" width="79" height="83" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="309" y="352">Animal</text>
+	<line stroke="black" stroke-opacity="1" x1="269" y1="359" x2="348" y2="359" />
+	<line stroke="black" stroke-opacity="1" x1="269" y1="364" x2="348" y2="364" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="373">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="373">Animal()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="388">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="388">draw()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="403">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="403">getSize()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="418">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="418">operator +()</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="517" y="99" width="2" height="78" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="441" y="175" width="78" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="438" y="96" width="79" height="79" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="478" y="105">AudioPlayer</text>
+	<line stroke="black" stroke-opacity="1" x1="438" y1="112" x2="517" y2="112" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="441" y="121">-</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" text-decoration="underline" x="454" y="121">musicPid</text>
+	<line stroke="black" stroke-opacity="1" x1="438" y1="128" x2="517" y2="128" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="441" y="137">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" text-decoration="underline" x="454" y="137">playSound()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="441" y="152">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" text-decoration="underline" x="454" y="152">playMusic()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="441" y="167">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" text-decoration="underline" x="454" y="167">stopMusic()</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="342" y="35" width="2" height="242" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="272" y="275" width="72" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="269" y="32" width="73" height="243" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" font-style="italic" text-anchor="middle" x="306" y="41">Shape</text>
+	<line stroke="black" stroke-opacity="1" x1="269" y1="48" x2="342" y2="48" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="57">#</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="57">pos</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="72">#</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="72">rot</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="87">#</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="87">color</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="102">#</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="102">tspeed</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="117">#</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="117">rspeed</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="132">#</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="132">acc_ratio</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="147">#</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="147">mynumber</text>
+	<line stroke="black" stroke-opacity="1" x1="269" y1="154" x2="342" y2="154" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="163">#</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="163">predraw()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="178">#</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="178">postdraw()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="193">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="193">Shape()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="208">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="208">move()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="223">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="285" y="223">draw()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="238">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="238">getPos()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="253">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="285" y="253">getSize()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="272" y="268">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="285" y="268">getNo()</text>
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="309" y1="342" x2="309" y2="283" />
+	<line stroke="#000000" stroke-opacity="1" x1="310" y1="278" x2="303" y2="283" />
+	<line stroke="#000000" stroke-opacity="1" x1="310" y1="278" x2="315" y2="284" />
+	<line stroke="#000000" stroke-opacity="1" x1="303" y1="283" x2="315" y2="284" />
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="271" y="499" width="2" height="122" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="203" y="619" width="70" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="200" y="496" width="71" height="123" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="236" y="505">Man</text>
+	<line stroke="black" stroke-opacity="1" x1="200" y1="512" x2="271" y2="512" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="203" y="521">-</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="216" y="521">status</text>
+	<line stroke="black" stroke-opacity="1" x1="200" y1="528" x2="271" y2="528" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="203" y="537">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="216" y="537">Man()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="203" y="552">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="216" y="552">draw()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="203" y="567">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="216" y="567">strafe()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="203" y="582">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="216" y="582">fire()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="203" y="597">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="216" y="597">getSize()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="203" y="612">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="216" y="612">resetpos()</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="128" y="138" width="2" height="42" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="72" y="178" width="58" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="69" y="135" width="59" height="43" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" text-anchor="middle" x="99" y="144">&lt;&lt;struct&gt;&gt;</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="99" y="160">nodo</text>
+	<line stroke="black" stroke-opacity="1" x1="69" y1="167" x2="128" y2="167" />
+	<line stroke="black" stroke-opacity="1" x1="69" y1="172" x2="128" y2="172" />
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="204" y="345" width="2" height="78" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="144" y="421" width="62" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="141" y="342" width="63" height="79" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="173" y="351">Bullet</text>
+	<line stroke="black" stroke-opacity="1" x1="141" y1="358" x2="204" y2="358" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="144" y="367">-</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="157" y="367">status</text>
+	<line stroke="black" stroke-opacity="1" x1="141" y1="374" x2="204" y2="374" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="144" y="383">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="157" y="383">Bullet()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="144" y="398">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="157" y="398">draw()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="144" y="413">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="157" y="413">getSize()</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="472" y="346" width="2" height="198" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="386" y="542" width="88" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="383" y="343" width="89" height="199" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="428" y="352">Ball</text>
+	<line stroke="black" stroke-opacity="1" x1="383" y1="359" x2="472" y2="359" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="386" y="368">-</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="399" y="368">size</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="386" y="383">-</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="399" y="383">type</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="386" y="398">-</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="399" y="398">ax</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="386" y="413">-</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="399" y="413">ay</text>
+	<line stroke="black" stroke-opacity="1" x1="383" y1="420" x2="472" y2="420" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="386" y="429">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="399" y="429">split()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="386" y="444">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="399" y="444">Ball()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="386" y="459">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="399" y="459">Ball()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="386" y="474">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="399" y="474">draw()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="386" y="489">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="399" y="489">getSize()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="386" y="504">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="399" y="504">reposition()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="386" y="519">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="399" y="519">updateColor()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="386" y="534">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="399" y="534">operator +()</text>
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="426" y1="342" x2="426" y2="311" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="29" y1="137" x2="29" y2="178" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="68" y1="148" x2="29" y2="137" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="177" y1="341" x2="177" y2="311" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="68" y1="165" x2="60" y2="161" />
+	<line stroke="black" stroke-opacity="1" x1="68" y1="165" x2="64" y2="172" />
+	<line stroke="black" stroke-opacity="1" x1="29" y1="178" x2="68" y2="165" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="237" y1="495" x2="239" y2="311" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="268" y1="157" x2="262" y2="151" />
+	<line stroke="black" stroke-opacity="1" x1="268" y1="157" x2="262" y2="163" />
+	<line stroke="black" stroke-opacity="1" x1="131" y1="157" x2="268" y2="157" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="426" y1="311" x2="310" y2="311" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="177" y1="311" x2="310" y2="311" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="239" y1="311" x2="312" y2="311" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="312" y1="311" x2="310" y2="283" />
+	<line stroke="#000000" stroke-opacity="1" x1="310" y1="278" x2="304" y2="284" />
+	<line stroke="#000000" stroke-opacity="1" x1="310" y1="278" x2="316" y2="283" />
+	<line stroke="#000000" stroke-opacity="1" x1="304" y1="284" x2="316" y2="283" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="310" y1="311" x2="310" y2="284" />
+	<line stroke="#000000" stroke-opacity="1" x1="310" y1="278" x2="304" y2="284" />
+	<line stroke="#000000" stroke-opacity="1" x1="310" y1="278" x2="316" y2="284" />
+	<line stroke="#000000" stroke-opacity="1" x1="304" y1="284" x2="316" y2="284" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="310" y1="311" x2="310" y2="284" />
+	<line stroke="#000000" stroke-opacity="1" x1="310" y1="278" x2="304" y2="284" />
+	<line stroke="#000000" stroke-opacity="1" x1="310" y1="278" x2="316" y2="284" />
+	<line stroke="#000000" stroke-opacity="1" x1="304" y1="284" x2="316" y2="284" />
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="165" y="461" width="2" height="198" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="35" y="657" width="132" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="32" y="458" width="133" height="199" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="99" y="467">ObjectsList</text>
+	<line stroke="black" stroke-opacity="1" x1="32" y1="474" x2="165" y2="474" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="35" y="483">-</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="48" y="483">n</text>
+	<line stroke="black" stroke-opacity="1" x1="32" y1="490" x2="165" y2="490" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="35" y="499">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="48" y="499">ObjectsList()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="35" y="514">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="48" y="514">~ObjectsList()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="35" y="529">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="48" y="529">move()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="35" y="544">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="48" y="544">draw()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="35" y="559">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="48" y="559">getMan()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="35" y="574">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="48" y="574">add()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="35" y="589">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="48" y="589">remove()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="35" y="604">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="48" y="604">reposition()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="35" y="619">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="48" y="619">collisions()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="35" y="634">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="48" y="634">removeAllExceptMan()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="35" y="649">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="48" y="649">createBalls()</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="103" y1="181" x2="97" y2="187" />
+	<line stroke="black" stroke-opacity="1" x1="103" y1="181" x2="109" y2="187" />
+	<line stroke="black" stroke-opacity="1" x1="103" y1="457" x2="103" y2="181" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="199" y1="559" x2="193" y2="553" />
+	<line stroke="black" stroke-opacity="1" x1="199" y1="559" x2="193" y2="565" />
+	<line stroke="black" stroke-opacity="1" x1="168" y1="559" x2="199" y2="559" />
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="629" y="345" width="2" height="108" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="509" y="451" width="122" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="506" y="342" width="123" height="109" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="568" y="351">Obstacle</text>
+	<line stroke="black" stroke-opacity="1" x1="506" y1="358" x2="629" y2="358" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="509" y="367">-</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="522" y="367">size</text>
+	<line stroke="black" stroke-opacity="1" x1="506" y1="374" x2="629" y2="374" />
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="509" y="383">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="522" y="383">Obstacle()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="509" y="398">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="522" y="398">draw()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="509" y="413">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="522" y="413">getSize()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="509" y="428">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="522" y="428">getDistanceToEdge()</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="509" y="443">+</text>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="522" y="443">operator +()</text>
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="566" y1="341" x2="566" y2="311" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="566" y1="311" x2="310" y2="311" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="310" y1="311" x2="310" y2="284" />
+	<line stroke="#000000" stroke-opacity="1" x1="310" y1="278" x2="304" y2="284" />
+	<line stroke="#000000" stroke-opacity="1" x1="310" y1="278" x2="316" y2="284" />
+	<line stroke="#000000" stroke-opacity="1" x1="304" y1="284" x2="316" y2="284" />
+</g>
+<g>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="29" y="152">next</text>
+</g>
+<g>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="110" y="197">head</text>
+</g>
+<g>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="245" y="147">obj</text>
+</g>
+<g>
+	<text font-family="Ubuntu Sans" font-size="8" fill="#000000" xml:space="preserve" x="154" y="549">theMan</text>
+</g>
+</svg>
